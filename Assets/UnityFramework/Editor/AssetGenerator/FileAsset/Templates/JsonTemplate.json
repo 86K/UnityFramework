@@ -1,0 +1,21 @@
+{
+	"configuration":{
+		"configInfo":"载入模块 视频资源路径-视频名称 图片资源路径- 图片名称",
+		"servers":{
+			"rsserver":{
+
+			},
+			"dbserver":{
+
+			}
+		},
+		"xxxmodule":{
+			"resources":{
+
+			},
+			"parameters":{
+				"test":"json"
+			}
+		}
+	}
+}
