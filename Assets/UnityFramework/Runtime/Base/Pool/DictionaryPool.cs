@@ -24,7 +24,7 @@ namespace UnityFramework.Runtime
         }
     }
 
-    public static class DictionaryPoolExtension
+    public static class DictionaryPoolExtension 
     {
         public static void Recycle<TKey, TValue>(this Dictionary<TKey, TValue> _self)
         {
