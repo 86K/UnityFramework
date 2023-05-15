@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace UnityFramework.Runtime
 {
-    public partial class Util
+    public static partial class Util
     {
-        public class Timestamp
+        public static class Timestamp
         {
             //DateTime类型转换为时间戳(毫秒值)
             private static long DateToTicks(DateTime? time)

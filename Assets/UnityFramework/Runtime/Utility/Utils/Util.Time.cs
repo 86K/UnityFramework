@@ -2,12 +2,12 @@
 
 namespace UnityFramework.Runtime
 {
-    public partial class Util
+    public static partial class Util
     {
         /// <summary>
         /// 时间相关的实用工具类
         /// </summary>
-        public class Time
+        public static class Time
         {
             /// <summary>
             /// 得到时钟时间
