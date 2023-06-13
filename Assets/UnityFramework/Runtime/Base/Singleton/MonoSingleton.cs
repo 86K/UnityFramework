@@ -57,9 +57,6 @@ namespace UnityFramework.Runtime
             }
         }
 
-        /// <summary>
-        /// Use this function instead of awake.
-        /// </summary>
         protected virtual void Init()
         {
         }
