@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace UnityFramework.Runtime
 {
-    // NOTE 不需要显示详细的引用池信息
     public static partial class ReferencePool
     {
         private static readonly Dictionary<Type, ReferenceCollection> m_ReferenceCollections =
