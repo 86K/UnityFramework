@@ -41,8 +41,7 @@ namespace UnityFramework.Runtime
         
         public bool Contains(TKey key, TValue value)
         {
-            UnityFrameworkLinkedListRange<TValue> range = default(UnityFrameworkLinkedListRange<TValue>);
-            if (m_Dictionary.TryGetValue(key, out range))
+            if (m_Dictionary.TryGetValue(key, out var range))
             {
                 return range.Contains(value);
             }
@@ -57,8 +56,7 @@ namespace UnityFramework.Runtime
         
         public void Add(TKey key, TValue value)
         {
-            UnityFrameworkLinkedListRange<TValue> range = default(UnityFrameworkLinkedListRange<TValue>);
-            if (m_Dictionary.TryGetValue(key, out range))
+            if (m_Dictionary.TryGetValue(key, out var range))
             {
                 m_LinkedList.AddBefore(range.Last, value);
             }
@@ -72,8 +70,7 @@ namespace UnityFramework.Runtime
         
         public bool Remove(TKey key, TValue value)
         {
-            UnityFrameworkLinkedListRange<TValue> range = default(UnityFrameworkLinkedListRange<TValue>);
-            if (m_Dictionary.TryGetValue(key, out range))
+            if (m_Dictionary.TryGetValue(key, out var range))
             {
                 for (LinkedListNode<TValue> current = range.First; current != null && current != range.Last; current = current.Next)
                 {
@@ -104,8 +101,7 @@ namespace UnityFramework.Runtime
         
         public bool RemoveAll(TKey key)
         {
-            UnityFrameworkLinkedListRange<TValue> range = default(UnityFrameworkLinkedListRange<TValue>);
-            if (m_Dictionary.TryGetValue(key, out range))
+            if (m_Dictionary.TryGetValue(key, out var range))
             {
                 m_Dictionary.Remove(key);
 
