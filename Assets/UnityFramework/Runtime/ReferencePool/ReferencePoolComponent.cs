@@ -3,7 +3,7 @@
 namespace UnityFramework.Runtime
 {
     [DisallowMultipleComponent]
-    [AddComponentMenu("itsxwz/Framework/ReferencePool")]
+    [AddComponentMenu("itsxwz/UnityFramework/ReferencePool")]
     public sealed class ReferencePoolComponent : MonoSingleton<ReferencePoolComponent>
     {
         [SerializeField] private ReferenceStrictCheckType m_EnableStrictCheck = ReferenceStrictCheckType.AlwaysEnable;

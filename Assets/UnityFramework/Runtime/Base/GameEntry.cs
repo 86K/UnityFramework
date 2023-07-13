@@ -2,6 +2,9 @@ using System;
 
 namespace UnityFramework.Runtime
 {
+    /// <summary>
+    /// 所有的UnityFrameworkComponent从入口注册和获取
+    /// </summary>
     public static class GameEntry
     {
         private static readonly UnityFrameworkLinkedList<UnityFrameworkComponent> m_UnityFrameworkComponents = new UnityFrameworkLinkedList<UnityFrameworkComponent>();

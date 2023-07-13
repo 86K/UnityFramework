@@ -95,7 +95,7 @@ namespace UnityFramework.Runtime
 
             m_Modules.Clear();
             // NOTE 框架相关的都要清理
-            // ReferencePool.ClearAll();
+            ReferencePool.ClearAll();
             Util.Marshal.FreeCachedHGlobal();
         }
     }

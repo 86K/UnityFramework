@@ -6,9 +6,9 @@ namespace UnityFramework.Runtime
 {
     public abstract class UnityFrameworkComponent : MonoBehaviour
     {
-        protected virtual void AWake()
+        protected virtual void Awake()
         {
-
+            GameEntry.Register(this);
         }
     }
 }
