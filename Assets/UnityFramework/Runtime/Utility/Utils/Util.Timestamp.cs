@@ -37,7 +37,7 @@ namespace UnityFramework.Runtime
             /// <param name="timestamp"></param>
             /// <param name="format"></param>
             /// <returns></returns>
-            public static string TString(string timestamp, string format = "yyyy-MM-dd HH:mm:ss")
+            public static string ToString(string timestamp, string format = "yyyy-MM-dd HH:mm:ss")
             {
                 // NOTE：时间戳是1970的不要输出！
                 if (string.IsNullOrEmpty(timestamp))

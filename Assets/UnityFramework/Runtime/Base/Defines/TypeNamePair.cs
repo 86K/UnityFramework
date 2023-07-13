@@ -19,7 +19,12 @@ namespace UnityFramework.Runtime
             m_Type = type ?? throw new Exception("Type is invalid.");
             m_Name = name ?? string.Empty;
         }
-        
+
+        public override bool Equals(object obj)
+        {
+            return obj is TypeNamePair && Equals((TypeNamePair)obj);
+        }
+
         public bool Equals(TypeNamePair other)
         {
             return m_Type == other.m_Type && m_Name == other.m_Name;

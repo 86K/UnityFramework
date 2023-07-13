@@ -4,11 +4,10 @@ namespace UnityFramework.Runtime
 {
     [DisallowMultipleComponent]
     [AddComponentMenu("itsxwz/Framework/ReferencePool")]
-    public class ReferencePoolComponent : MonoSingleton<ReferencePoolComponent>
+    public sealed class ReferencePoolComponent : MonoSingleton<ReferencePoolComponent>
     {
         [SerializeField] private ReferenceStrictCheckType m_EnableStrictCheck = ReferenceStrictCheckType.AlwaysEnable;
-
-
+        
         /// <summary>
         /// 获取或设置是否开启强制检查。
         /// </summary>
@@ -30,7 +29,6 @@ namespace UnityFramework.Runtime
         {
             switch (m_EnableStrictCheck)
             {
-                // NOTE 这里是否可以只需要AlwaysEnable？
                 case ReferenceStrictCheckType.AlwaysEnable:
                     EnableStrictCheck = true;
                     break;

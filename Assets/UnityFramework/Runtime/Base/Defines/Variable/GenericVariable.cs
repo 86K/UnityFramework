@@ -38,9 +38,12 @@ namespace UnityFramework.Runtime
             m_Value = default;
         }
 
+        /// <summary>
+        /// 泛型变量为空时, ToString的值默认为 <NULL>
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            // NOTE 泛型变量为空时ToString的值默认为 <NULL>
             return m_Value != null ? m_Value.ToString() : "<NULL>";
         }
     }
